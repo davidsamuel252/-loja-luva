@@ -1,0 +1,89 @@
+body{
+    display: grid;
+    grid-template-areas: "cabeca cabeca" "braco corpo" "peh peh";
+    grid-template-rows: 200px auto 100px;
+    grid-template-columns: 1fr 4fr;
+}
+header{
+    grid-area: cabeca;
+    background-color: rgb(6, 233, 63);
+}
+aside{
+    grid-area: braco;
+    background-color: rgb(6, 233, 29);
+}
+main{
+    grid-area: corpo;
+    background-color: rgb(6, 233, 9);
+}
+footer{
+    grid-area: peh;
+    background-color: rgb(6, 233, 1);
+}
+@MEDIA only screen and (max-width:850px){
+    body{
+        display: grid;
+        grid-template-areas: "cabeca" "braco" "corpo" "peh";
+        grid-template-rows:200px 100px auto 200px;
+        grid-template-columns: auto;
+    }
+    .letra{color: chartreuse;
+    background-color: aquamarine;
+    }
+}
+@media only screen and (max-width:450px){
+    body{
+        display: grid;
+        grid-template-areas:"cabeca" "corpo" "peh";
+        grid-template-rows: 100px auto 100px;
+        grid-template-columns: auto;
+    }
+    aside{
+        display: none;
+    }
+}
+.card{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    border: rgb(14, 71, 230) 2px solid;
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    text-align: center;
+    margin: 10px;
+}
+.cityboy{
+    width: 300px;
+    
+}
+.descricao{
+    color: rgb(0, 0, 0);
+    font-size: x-large;
+}
+.preco{
+    color: rgb(0, 0, 0);
+    font-size: x-large;
+}
+.botao{ 
+    font-size: large;
+    background-color: rgb(224, 11, 11);
+    width: 50%;
+    text-decoration: none;
+    height: 50px;
+    border-radius: 20px;
+}
+.letra_botao{
+ display: block;
+ text-align: center;
+ text-decoration: none;
+ color: rgb(215, 250, 222); 
+}
+.mae{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
